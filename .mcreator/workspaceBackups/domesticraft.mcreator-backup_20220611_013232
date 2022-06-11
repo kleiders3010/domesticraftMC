@@ -56,13 +56,23 @@
           }
         ]
       }
+    },
+    {
+      "name": "Rendertest",
+      "type": "livingentity",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rendertest"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.domesticraft.rendertest_spawn_egg": "Rendertest Spawn Egg",
       "item.domesticraft.labrador_spawn_egg": "Labrador Spawn Egg",
+      "entity.domesticraft.rendertest": "Rendertest",
       "entity.domesticraft.labrador": "Labrador"
     }
   },
@@ -83,7 +93,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.18.2",
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "com.kleiders.domesticraft",
     "lockBaseModFiles": false
   },

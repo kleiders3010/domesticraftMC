@@ -56,23 +56,13 @@
           }
         ]
       }
-    },
-    {
-      "name": "Rendertest",
-      "type": "livingentity",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rendertest"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.domesticraft.rendertest_spawn_egg": "Rendertest Spawn Egg",
       "item.domesticraft.labrador_spawn_egg": "Labrador Spawn Egg",
-      "entity.domesticraft.rendertest": "Rendertest",
       "entity.domesticraft.labrador": "Labrador"
     }
   },
