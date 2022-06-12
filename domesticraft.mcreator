@@ -4,7 +4,7 @@
       "name": "Labrador",
       "type": "livingentity",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "labrador"
     },

@@ -104,7 +104,6 @@ public class LabradorEntity extends DomesticraftModElements.ModElement implement
 
 	public LabradorEntity(DomesticraftModElements instance) {
 		super(instance, 1);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new LabradorRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
 
