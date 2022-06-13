@@ -19,8 +19,13 @@
 					]
 				},
 				{
-					"name": "head",
+					"name": "headstill",
 					"parent": "body",
+					"pivot": [0, 13.47756, -6.00006]
+				},
+				{
+					"name": "head",
+					"parent": "headstill",
 					"pivot": [0, 13.47756, -6.00006],
 					"cubes": [
 						{"origin": [-3, 12.47756, -10.00006], "size": [6, 5, 6], "uv": [0, 20]},
@@ -29,6 +34,15 @@
 					"locators": {
 						"lead": [0, 12, -6]
 					}
+				},
+				{
+					"name": "helder",
+					"parent": "head",
+					"pivot": [0, 13.97756, -13.00006],
+					"rotation": [0, 0, 90],
+					"cubes": [
+						{"origin": [0, 13.97756, -13.00006], "size": [0, 0, 0], "uv": [0, 0]}
+					]
 				},
 				{
 					"name": "ear1",

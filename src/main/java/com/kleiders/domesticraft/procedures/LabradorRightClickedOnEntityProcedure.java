@@ -1,31 +1,26 @@
 package com.kleiders.domesticraft.procedures;
 
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.passive.TameableEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Map;
-
-import com.kleiders.domesticraft.DomesticraftMod;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
 
 public class LabradorRightClickedOnEntityProcedure {
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				DomesticraftMod.LOGGER.warn("Failed to load dependency entity for procedure LabradorRightClickedOnEntity!");
+	public static void execute(LevelAccessor world, Entity entity) {
+		if (entity == null)
 			return;
-		}
-		Entity entity = (Entity) dependencies.get("entity");
-		if ((entity instanceof TameableEntity) ? ((TameableEntity) entity).isTamed() : false) {
-			if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
-					.getBoolean("sitting")) {
-				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
-						.putBoolean("sitting", (false));
-			} else {
-				((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
-						.putBoolean("sitting", (true));
+		if (!world.isClientSide()) {
+			if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getOrCreateTag()
+						.getBoolean("sitting") == true) {
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getOrCreateTag()
+							.putBoolean("sitting", (false));
+				} else {
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getOrCreateTag()
+							.putBoolean("sitting", (true));
+				}
 			}
 		}
 	}

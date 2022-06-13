@@ -1,9 +1,76 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"animation.labrador.sitting": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"vector": [-42.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, -3, 0]
+					}
+				},
+				"left_front_leg": {
+					"rotation": {
+						"vector": [42.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, 1, 0]
+					},
+					"scale": {
+						"vector": [1, 1.2, 1]
+					}
+				},
+				"right_front_leg": {
+					"rotation": {
+						"vector": [42.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, 1, 0]
+					},
+					"scale": {
+						"vector": [1, 1.2, 1]
+					}
+				},
+				"left_back_leg": {
+					"rotation": {
+						"vector": [-42.5, -25, -22.5]
+					},
+					"position": {
+						"vector": [0, 1, 0]
+					}
+				},
+				"right_back_leg": {
+					"rotation": {
+						"vector": [-42.5, 25, 22.5]
+					},
+					"position": {
+						"vector": [0, 1, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"vector": [67.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, -1]
+					}
+				},
+				"headstill": {
+					"rotation": {
+						"vector": [40, 0, 0]
+					},
+					"position": {
+						"vector": [0, -2, -1]
+					}
+				}
+			}
+		},
 		"animation.labrador.sit": {
 			"loop": "hold_on_last_frame",
-			"animation_length": 0.41667,
+			"animation_length": 0.4167,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -20,24 +87,6 @@
 						},
 						"0.4167": {
 							"vector": [0, -3, 0]
-						}
-					}
-				},
-				"head": {
-					"rotation": {
-						"0.0": {
-							"vector": [0, 0, 0]
-						},
-						"0.4167": {
-							"vector": [40, 0, 0]
-						}
-					},
-					"position": {
-						"0.0": {
-							"vector": [0, 0, 0]
-						},
-						"0.4167": {
-							"vector": [0, -2, -1]
 						}
 					}
 				},
@@ -146,11 +195,28 @@
 							"vector": [0, 0, -1]
 						}
 					}
+				},
+				"headstill": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4167": {
+							"vector": [40, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4167": {
+							"vector": [0, -2, -1]
+						}
+					}
 				}
 			}
 		},
 		"animation.labrador.unsit": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 0.25,
 			"bones": {
 				"body": {
@@ -171,24 +237,6 @@
 						}
 					}
 				},
-				"head": {
-					"rotation": {
-						"0.0": {
-							"vector": [40, 0, 0]
-						},
-						"0.25": {
-							"vector": [0, 0, 0]
-						}
-					},
-					"position": {
-						"0.0": {
-							"vector": [0, -2, -1]
-						},
-						"0.25": {
-							"vector": [0, 0, 0]
-						}
-					}
-				},
 				"left_front_leg": {
 					"rotation": {
 						"0.0": {
@@ -294,11 +342,28 @@
 							"vector": [0, 0, 0]
 						}
 					}
+				},
+				"headstill": {
+					"rotation": {
+						"0.0": {
+							"vector": [40, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, -2, -1]
+						},
+						"0.25": {
+							"vector": [0, 0, 0]
+						}
+					}
 				}
 			}
 		},
 		"animation.labrador.lay": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 0.66667,
 			"bones": {
 				"body": {

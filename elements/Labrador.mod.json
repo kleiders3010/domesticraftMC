@@ -4,12 +4,12 @@
   "definition": {
     "mobName": "Labrador",
     "mobLabel": "",
-    "mobModelName": "Ocelot",
+    "mobModelName": "Biped",
     "mobModelTexture": "labrador.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
-    "modelHeight": 0.9,
-    "modelShadowSize": 0.30000000000000004,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
@@ -49,10 +49,10 @@
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.27,
+    "movementSpeed": 0.26,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 16,
+    "health": 15,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -80,13 +80,13 @@
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "entity.wolf.ambient"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "entity.wolf.hurt"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "entity.wolf.death"
     },
     "stepSound": {
       "value": ""
@@ -106,7 +106,7 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">2</field><field name=\"max_distance\">10</field><field name=\"condition\">SittingCheck,SittingCheck</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"protect_owner\"><field name=\"condition\">SittingCheck,SittingCheck</field><next><block type=\"fight_as_owner\"><field name=\"condition\">SittingCheck,SittingCheck</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block><block type=\"wander\" x=\"550\" y=\"188\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">SittingCheck,SittingCheck</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">SittingCheck,SittingCheck</field><next><block type=\"protect_owner\"><field name=\"condition\">SittingCheck,SittingCheck</field><next><block type=\"fight_as_owner\"><field name=\"condition\">SittingCheck,SittingCheck</field><next><block type=\"look_around\"><field name=\"condition\">SittingCheck,SittingCheck</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": true,
     "tameable": true,
     "breedTriggerItems": [
